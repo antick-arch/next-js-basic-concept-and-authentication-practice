@@ -1,14 +1,11 @@
 import React from "react";
 
 const ModelPage = async () => {
-  // const res = await fetch('http://localhost:8000/application/',{cache:'no-cache'});
-  //   const res = await fetch("http://localhost:8000/application/", {
-  //     cache: "no-store",
-  //   });
+  // const res = await fetch("http://localhost:8000/application/",{
+  //   cache:"no-cache",
+  // });
   const res = await fetch("http://localhost:8000/application/", {
-    next: {
-      revalidate: 10,
-    },
+    next: { revalidate: 10 },
   });
 
   const data = await res.json();
