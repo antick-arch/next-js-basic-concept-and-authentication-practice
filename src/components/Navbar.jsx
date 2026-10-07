@@ -38,6 +38,9 @@ const Navbar = () => {
             <li>
               <Link href={'/models'}>Models</Link>
             </li>
+            <li>
+              <Link href={'/signup'}>Sign Up</Link>
+            </li>
           </ul>
         </div>
         <div className="navbar-end">
